@@ -455,3 +455,43 @@ x==========x]
 [2024-06-09 19:17:24,186: INFO: created directory at: artifacts]
 [2024-06-09 19:17:24,187: INFO: created directory at: artifacts/data_ingestion]
 [2024-06-09 19:17:24,187: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 19:21:48,939: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 19:21:52,468: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 19:21:52,474: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:21:52,480: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:21:52,481: INFO: created directory at: artifacts]
+[2024-06-09 19:21:52,485: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 19:21:52,486: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 19:23:48,705: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 19:23:50,011: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 19:23:50,012: INFO: *******************]
+[2024-06-09 19:23:50,012: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 19:23:50,016: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:23:50,020: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:23:50,020: INFO: created directory at: artifacts]
+[2024-06-09 19:23:50,021: INFO: created directory at: artifacts/prepare_base_model]
+[2024-06-09 19:23:50,932: WARNING: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-09 19:23:51,352: INFO: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-09 19:23:51,353: INFO: *******************]
+[2024-06-09 19:23:51,353: INFO: >>>>>> stage Training started <<<<<<]
+[2024-06-09 19:23:51,356: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:23:51,358: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:23:51,359: INFO: created directory at: artifacts]
+[2024-06-09 19:23:51,360: INFO: created directory at: artifacts\training]
+[2024-06-09 19:26:38,706: INFO: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-09 19:26:38,712: INFO: *******************]
+[2024-06-09 19:26:38,713: INFO: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-06-09 19:26:38,720: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:26:38,724: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:26:38,725: INFO: created directory at: artifacts]
+[2024-06-09 19:27:29,920: INFO: json file saved at: scores.json]
+[2024-06-09 19:27:29,922: INFO: json file saved at: scores.json]
+[2024-06-09 19:27:29,923: INFO: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
