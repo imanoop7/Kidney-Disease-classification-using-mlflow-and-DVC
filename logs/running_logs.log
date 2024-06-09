@@ -67,3 +67,48 @@ ValueError: yaml file is empty
 [2024-06-09 15:19:58,939: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-06-09 15:47:24,533: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 15:47:27,036: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 15:47:27,044: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 15:47:27,045: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 15:47:27,046: INFO: created directory at: artifacts]
+[2024-06-09 15:47:27,046: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 15:47:27,046: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 15:47:41,954: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 15:47:43,174: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 15:47:43,175: INFO: *******************]
+[2024-06-09 15:47:43,176: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 15:47:43,180: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 15:47:43,184: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 15:47:43,185: INFO: created directory at: artifacts]
+[2024-06-09 15:47:43,186: ERROR: 'ConfigurationManager' object has no attribute 'get_prepare_base_model_config']
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\Kidney-Disease-classification-using-mlflow-and-DVC\main.py", line 22, in <module>
+    prepare_base_model.main()
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepare_base_model_config'
+[2024-06-09 15:48:49,758: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 15:48:50,888: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 15:48:50,891: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 15:48:50,895: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 15:48:50,895: INFO: created directory at: artifacts]
+[2024-06-09 15:48:50,896: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 15:48:50,897: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 15:49:06,963: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 15:49:07,951: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 15:49:07,952: INFO: *******************]
+[2024-06-09 15:49:07,952: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 15:49:07,956: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 15:49:07,959: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 15:49:07,960: INFO: created directory at: artifacts]
+[2024-06-09 15:49:07,961: INFO: created directory at: artifacts/prepare_base_model]
+[2024-06-09 15:49:27,651: WARNING: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-09 15:49:28,209: INFO: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
