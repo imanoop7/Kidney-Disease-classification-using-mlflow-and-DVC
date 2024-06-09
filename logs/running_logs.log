@@ -408,3 +408,50 @@ FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingesti
 
 	 [[{{node PyFunc}}]]
 	 [[IteratorGetNext]] [Op:__inference_train_function_1463]
+[2024-06-09 19:11:47,622: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 19:11:54,108: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 19:11:54,131: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:11:54,136: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:11:54,138: INFO: created directory at: artifacts]
+[2024-06-09 19:11:54,139: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 19:11:54,145: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 19:12:11,728: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 19:12:14,159: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 19:12:14,160: INFO: *******************]
+[2024-06-09 19:12:14,160: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 19:12:14,167: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:12:14,172: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:12:14,173: INFO: created directory at: artifacts]
+[2024-06-09 19:12:14,175: INFO: created directory at: artifacts/prepare_base_model]
+[2024-06-09 19:12:16,561: WARNING: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-09 19:12:20,011: INFO: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-09 19:12:20,013: INFO: *******************]
+[2024-06-09 19:12:20,013: INFO: >>>>>> stage Training started <<<<<<]
+[2024-06-09 19:12:20,016: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:12:20,022: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:12:20,023: INFO: created directory at: artifacts]
+[2024-06-09 19:12:20,024: INFO: created directory at: artifacts\training]
+[2024-06-09 19:15:16,719: INFO: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-09 19:15:16,720: INFO: *******************]
+[2024-06-09 19:15:16,721: INFO: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-06-09 19:15:16,726: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:15:16,730: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:15:16,731: INFO: created directory at: artifacts]
+[2024-06-09 19:16:05,595: INFO: json file saved at: scores.json]
+[2024-06-09 19:16:05,598: INFO: json file saved at: scores.json]
+[2024-06-09 19:16:05,599: INFO: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-06-09 19:17:21,268: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 19:17:24,182: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 19:17:24,184: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:17:24,186: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:17:24,186: INFO: created directory at: artifacts]
+[2024-06-09 19:17:24,187: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 19:17:24,187: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
