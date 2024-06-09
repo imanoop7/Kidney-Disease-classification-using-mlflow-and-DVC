@@ -109,7 +109,8 @@ To run the project, follow these steps:
     ├── requirements.txt        # Python dependencies
     ├── README.md               # Project documentation
     └── .gitignore              # Git ignore file
+    ```
 
-## usage 
+## Usage 
 ### Training
 Run the training script to train the machine learning model:
