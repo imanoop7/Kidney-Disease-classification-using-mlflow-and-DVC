@@ -114,3 +114,7 @@ To run the project, follow these steps:
 ## Usage 
 ### Training
 Run the training script to train the machine learning model:
+    ```sh
+    python src/train.py
+    ```
+    
