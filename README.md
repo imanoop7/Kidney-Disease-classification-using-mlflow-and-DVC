@@ -2,7 +2,6 @@
 
 This repository demonstrates a machine learning pipeline for classifying kidney disease, utilizing [MLflow](https://mlflow.org/) for experiment tracking and [DVC](https://dvc.org/) (Data Version Control) for data and model management. The goal is to build a reproducible and scalable workflow for kidney disease classification based on clinical features.
 
-![Workflow](assets/workflow.png)
 
 ## Table of Contents
 
