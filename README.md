@@ -110,4 +110,6 @@ To run the project, follow these steps:
     ├── README.md               # Project documentation
     └── .gitignore              # Git ignore file
 
-
+## usage 
+### Training
+Run the training script to train the machine learning model:
