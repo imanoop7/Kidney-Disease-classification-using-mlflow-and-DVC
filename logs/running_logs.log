@@ -112,3 +112,138 @@ x==========x]
 [2024-06-09 15:49:28,209: INFO: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2024-06-09 17:42:55,974: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 17:43:53,426: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 17:43:54,522: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 17:43:54,528: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 17:43:54,533: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 17:43:54,534: INFO: created directory at: artifacts]
+[2024-06-09 17:43:54,535: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 17:43:54,536: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 17:45:16,278: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 17:45:17,210: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 17:45:17,218: INFO: *******************]
+[2024-06-09 17:45:17,220: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 17:45:17,225: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 17:45:17,228: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 17:45:17,230: INFO: created directory at: artifacts]
+[2024-06-09 17:45:17,231: INFO: created directory at: artifacts/prepare_base_model]
+[2024-06-09 17:45:17,982: WARNING: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-09 17:45:18,548: INFO: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-09 17:45:18,549: INFO: *******************]
+[2024-06-09 17:45:18,549: INFO: >>>>>> stage Training started <<<<<<]
+[2024-06-09 17:45:18,552: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 17:45:18,553: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 17:45:18,554: INFO: created directory at: artifacts]
+[2024-06-09 17:45:18,555: ERROR: "'ConfigBox' object has no attribute 'training'"]
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'training'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'training'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'training'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'training'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\Kidney-Disease-classification-using-mlflow-and-DVC\main.py", line 34, in <module>
+    model_trainer.main()
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\config\configuration.py", line 58, in get_training_config
+    training = self.config.training
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'training'"
+[2024-06-09 17:47:10,841: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 17:47:11,831: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 17:47:11,860: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 17:47:11,864: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 17:47:11,865: INFO: created directory at: artifacts]
+[2024-06-09 17:47:11,868: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 17:47:11,870: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 17:47:25,335: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 17:47:26,356: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 17:47:26,357: INFO: *******************]
+[2024-06-09 17:47:26,357: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 17:47:26,365: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 17:47:26,378: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 17:47:26,385: INFO: created directory at: artifacts]
+[2024-06-09 17:47:26,389: INFO: created directory at: artifacts/prepare_base_model]
+[2024-06-09 17:47:27,107: WARNING: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-09 17:47:27,442: INFO: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-09 17:47:27,442: INFO: *******************]
+[2024-06-09 17:47:27,444: INFO: >>>>>> stage Training started <<<<<<]
+[2024-06-09 17:47:27,448: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 17:47:27,455: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 17:47:27,458: INFO: created directory at: artifacts]
+[2024-06-09 17:47:27,460: INFO: created directory at: artifacts\training]
+[2024-06-09 17:50:37,871: INFO: >>>>>> stage Training completed <<<<<<
+
+x==========x]
