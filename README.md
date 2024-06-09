@@ -80,17 +80,7 @@ To run the project, follow these steps:
 
 1. Start the MLflow tracking server (optional):
     ```sh
-    mlflow ui
-    ```
-
-2. Train the model:
-    ```sh
-    python src/train.py
-    ```
-
-3. Evaluate the model:
-    ```sh
-    python src/evaluate.py
+    python app.py
     ```
 
 ## Project Structure
@@ -114,7 +104,7 @@ To run the project, follow these steps:
 ### Training
 Run the training script to train the machine learning model:
     ```bash
-    python src/train.py
+    python main.py
     
 ## Experiment Tracking
 - Launch the MLflow UI to visualize experiment results:
