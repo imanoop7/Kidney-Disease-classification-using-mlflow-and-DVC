@@ -247,3 +247,71 @@ x==========x]
 [2024-06-09 17:50:37,871: INFO: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2024-06-09 18:46:36,431: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 18:49:25,397: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 18:49:29,958: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 18:49:29,961: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 18:49:29,963: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 18:49:29,965: INFO: created directory at: artifacts]
+[2024-06-09 18:49:29,966: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 18:49:29,967: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 18:49:58,774: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 18:49:59,752: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 18:49:59,753: INFO: *******************]
+[2024-06-09 18:49:59,754: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 18:49:59,759: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 18:49:59,762: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 18:49:59,762: INFO: created directory at: artifacts]
+[2024-06-09 18:49:59,763: INFO: created directory at: artifacts/prepare_base_model]
+[2024-06-09 18:50:00,534: WARNING: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-09 18:50:01,072: INFO: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-09 18:50:01,073: INFO: *******************]
+[2024-06-09 18:50:01,074: INFO: >>>>>> stage Training started <<<<<<]
+[2024-06-09 18:50:01,077: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 18:50:01,079: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 18:50:01,079: INFO: created directory at: artifacts]
+[2024-06-09 18:50:01,081: INFO: created directory at: artifacts\training]
+[2024-06-09 18:52:33,149: INFO: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-06-09 18:52:33,150: INFO: *******************]
+[2024-06-09 18:52:33,151: INFO: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-06-09 18:52:33,156: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 18:52:33,160: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 18:52:33,163: INFO: created directory at: artifacts]
+[2024-06-09 18:53:21,331: INFO: json file saved at: scores.json]
+[2024-06-09 18:53:21,334: INFO: json file saved at: scores.json]
+[2024-06-09 18:53:21,335: INFO: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-06-09 18:59:41,227: INFO: NumExpr defaulting to 4 threads.]
+[2024-06-09 18:59:47,347: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 18:59:47,352: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 18:59:47,358: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 18:59:47,359: INFO: created directory at: artifacts]
+[2024-06-09 18:59:47,359: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 18:59:47,360: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 18:59:59,683: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 19:00:01,106: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-09 19:00:01,114: INFO: *******************]
+[2024-06-09 19:00:01,127: INFO: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-09 19:00:01,149: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:00:01,175: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:00:01,181: INFO: created directory at: artifacts]
+[2024-06-09 19:00:01,184: INFO: created directory at: artifacts/prepare_base_model]
+[2024-06-09 19:00:03,889: WARNING: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-09 19:00:06,095: INFO: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-09 19:00:06,096: INFO: *******************]
+[2024-06-09 19:00:06,097: INFO: >>>>>> stage Training started <<<<<<]
+[2024-06-09 19:00:06,103: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 19:00:06,109: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 19:00:06,110: INFO: created directory at: artifacts]
+[2024-06-09 19:00:06,111: INFO: created directory at: artifacts\training]
