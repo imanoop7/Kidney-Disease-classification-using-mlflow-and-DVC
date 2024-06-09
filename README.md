@@ -16,7 +16,6 @@ This repository demonstrates a machine learning pipeline for classifying kidney 
 - [Usage](#usage)
   - [Training](#training)
   - [Experiment Tracking](#experiment-tracking)
-  - [Data Versioning](#data-versioning)
 - [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
@@ -114,7 +113,30 @@ To run the project, follow these steps:
 ## Usage 
 ### Training
 Run the training script to train the machine learning model:
-    ```sh
+    ```bash
     python src/train.py
-    ```
     
+## Experiment Tracking
+- Launch the MLflow UI to visualize experiment results:
+    ```sh
+    mlflow ui
+- Open localhost in your web browser.
+
+
+
+
+## Results
+Model evaluation results, including performance metrics and plots, can be found in the results directory. The best model is saved in the models directory.
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+1. Fork the repository.
+2. Create your feature branch: git checkout -b feature/YourFeature
+3. Commit your changes: git commit -m 'Add some feature'
+4. Push to the branch: git push origin feature/YourFeature
+5. Open a pull request.
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
