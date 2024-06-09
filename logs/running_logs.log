@@ -315,3 +315,96 @@ x==========x]
 [2024-06-09 19:00:06,109: INFO: yaml file: params.yaml loaded successfully]
 [2024-06-09 19:00:06,110: INFO: created directory at: artifacts]
 [2024-06-09 19:00:06,111: INFO: created directory at: artifacts\training]
+[2024-06-09 19:01:53,540: ERROR: Graph execution error:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney-ct-scan-image\\Normal\\Normal- (795).jpg'
+Traceback (most recent call last):
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\tensorflow\python\ops\script_ops.py", line 267, in __call__
+    ret = func(*args)
+          ^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\tensorflow\python\autograph\impl\api.py", line 642, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\tensorflow\python\data\ops\from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\engine\data_adapter.py", line 902, in wrapped_generator
+    for data in generator_fn():
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\engine\data_adapter.py", line 1049, in generator_fn
+    yield x[i]
+          ~^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\preprocessing\image.py", line 116, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\preprocessing\image.py", line 370, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+          ^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\utils\image_utils.py", line 422, in load_img
+    with open(path, "rb") as f:
+         ^^^^^^^^^^^^^^^^
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney-ct-scan-image\\Normal\\Normal- (795).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_1463]]
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\Kidney-Disease-classification-using-mlflow-and-DVC\main.py", line 35, in <module>
+    model_trainer.main()
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+    training.train()
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\components\model_training.py", line 76, in train
+    self.model.fit(
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\tensorflow\python\eager\execute.py", line 58, in quick_execute
+    except TypeError as e:
+tensorflow.python.framework.errors_impl.UnknownError: Graph execution error:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney-ct-scan-image\\Normal\\Normal- (795).jpg'
+Traceback (most recent call last):
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\tensorflow\python\ops\script_ops.py", line 267, in __call__
+    ret = func(*args)
+          ^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\tensorflow\python\autograph\impl\api.py", line 642, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\tensorflow\python\data\ops\from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\engine\data_adapter.py", line 902, in wrapped_generator
+    for data in generator_fn():
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\engine\data_adapter.py", line 1049, in generator_fn
+    yield x[i]
+          ~^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\preprocessing\image.py", line 116, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\preprocessing\image.py", line 370, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+          ^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\keras\utils\image_utils.py", line 422, in load_img
+    with open(path, "rb") as f:
+         ^^^^^^^^^^^^^^^^
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney-ct-scan-image\\Normal\\Normal- (795).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_1463]
