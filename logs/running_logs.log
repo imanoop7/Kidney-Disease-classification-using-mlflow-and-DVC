@@ -1,1 +1,69 @@
 [2024-06-09 14:02:42,499: INFO: Welcome to custom log]
+[2024-06-09 15:16:26,280: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 15:16:26,284: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 15:16:26,284: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 15:16:26,286: ERROR: yaml file is empty]
+Traceback (most recent call last):
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\Kidney-Disease-classification-using-mlflow-and-DVC\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\config\configuration.py", line 19, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-09 15:16:48,679: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 15:16:48,684: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 15:16:48,697: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 15:16:48,701: ERROR: yaml file is empty]
+Traceback (most recent call last):
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 247, in __init__
+    raise BoxValueError("Cannot extrapolate Box from string")
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\Kidney-Disease-classification-using-mlflow-and-DVC\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\config\configuration.py", line 19, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\kidney-disease-classification-using-mlflow-and-dvc\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-06-09 15:18:18,473: INFO: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-09 15:18:18,476: INFO: yaml file: config\config.yaml loaded successfully]
+[2024-06-09 15:18:18,482: INFO: yaml file: params.yaml loaded successfully]
+[2024-06-09 15:18:18,483: INFO: created directory at: artifacts]
+[2024-06-09 15:18:18,484: INFO: created directory at: artifacts/data_ingestion]
+[2024-06-09 15:18:18,486: INFO: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 15:19:57,680: INFO: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-09 15:19:58,939: INFO: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
